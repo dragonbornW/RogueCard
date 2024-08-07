@@ -16,7 +16,7 @@ namespace Foundation {
         public T current => _current;
         //ÏÂÒ»×´Ì¬
         public T next {
-            get => next;
+            get => _next;
             set {
                 if( _next != value ) {
                     _next = value;

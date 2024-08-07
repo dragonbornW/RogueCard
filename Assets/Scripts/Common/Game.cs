@@ -41,7 +41,7 @@ public class Game : MonoBehaviourSingleton<Game> {
         var state = _state.current;
         if( state != null ) {
             _state.locked = true;
-            state.update();
+            state.late_update();
             _state.locked = false;
         }
     }

@@ -1,10 +1,10 @@
 using UnityEngine;
 
 namespace Foundation {
+
     public class MonoBehaviourSingleton<T> : MonoBehaviour where T : MonoBehaviourSingleton<T> {
 
         protected static T _instance;
-    
         public static T instance => _instance;
 
         protected virtual void Awake() {

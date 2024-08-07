@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3516f02e97c9dd942a7bbac22430d1b9, type: 3}
+  m_Name: test_map
+  m_EditorClassIdentifier: 
+  nodes:
+  - rid: 631960959903334412
+  - rid: 631960959903334413
+  - rid: 631960959903334414
+  entries: 0100000002000000
+  height: 1000
+  references:
+    version: 2
+    RefIds:
+    - rid: 631960959903334412
+      type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
+      data:
+        position: {x: 500, y: 0}
+        next_indices: 02000000
+    - rid: 631960959903334413
+      type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
+      data:
+        position: {x: 253.3, y: 0}
+        next_indices: 02000000
+    - rid: 631960959903334414
+      type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
+      data:
+        position: {x: 500, y: 1000}
+        next_indices: 
