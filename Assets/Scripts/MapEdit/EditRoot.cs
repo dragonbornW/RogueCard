@@ -19,10 +19,11 @@ namespace MapEdit {
             var index = 0;
             
             foreach( var node in nodes ) {
-                node.index = index++;
+                node.index = index;
                 if( node.isEntry ) {
                     asset.entries.Add( index );
                 }
+                index++;
             }
 
             asset.nodes = new List<MapAsset.Node>();

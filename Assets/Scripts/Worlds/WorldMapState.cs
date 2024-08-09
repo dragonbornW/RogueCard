@@ -5,11 +5,20 @@ namespace Worlds {
 
         public override void enter(SubState last ) {
 
-            WorldSenceRoot.instance.map_view.gameObject.SetActive( true );
+            WorldSceneRoot.instance.map_view.gameObject.SetActive( true );
         }
+
         public override void exit() {
 
-            WorldSenceRoot.instance.map_view.gameObject.SetActive( false );
+            WorldSceneRoot.instance.map_view.gameObject.SetActive( false );
+        }
+
+        public void select_node( MapNode node ) {
+
+            var world = WorldState.current;
+            if( world.map.select_node( node ) ) {
+                node.do_enter();
+            }
         }
     }
 }

@@ -13,25 +13,25 @@ MonoBehaviour:
   m_Name: test_map
   m_EditorClassIdentifier: 
   nodes:
-  - rid: 631960959903334412
-  - rid: 631960959903334413
-  - rid: 631960959903334414
-  entries: 0100000002000000
+  - rid: 631960985395265554
+  - rid: 631960985395265555
+  - rid: 631960985395265556
+  entries: 0000000001000000
   height: 1000
   references:
     version: 2
     RefIds:
-    - rid: 631960959903334412
+    - rid: 631960985395265554
       type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
       data:
-        position: {x: 500, y: 0}
+        position: {x: 0, y: 0}
         next_indices: 02000000
-    - rid: 631960959903334413
+    - rid: 631960985395265555
       type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
       data:
-        position: {x: 253.3, y: 0}
+        position: {x: 644, y: 0}
         next_indices: 02000000
-    - rid: 631960959903334414
+    - rid: 631960985395265556
       type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
       data:
         position: {x: 500, y: 1000}

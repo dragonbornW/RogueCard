@@ -9,7 +9,7 @@ namespace Worlds {
         private StateMachine<SubState> _sub_state = new StateMachine<SubState>();
         private static WorldState _current;
         public Map map;
-        public WorldState current => _current;
+        public static WorldState current => _current;
         public SubState sub_state => _sub_state.current;
         public SubState next_sub_state {
             get => _sub_state.next;

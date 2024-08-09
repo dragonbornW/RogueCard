@@ -17,11 +17,20 @@ namespace Worlds {
             var height = map.height + 96;
             rt.SetSizeWithCurrentAnchors( RectTransform.Axis.Vertical,height );
 
-            foreach( var node in map._nodes ) {
+            foreach( var node in map.nodes ) {
 
                 var prefab = node.load_prefab();
                 var node_view = Instantiate( prefab, rt, false );
-                node_view.transform.localPosition = node.position + new Vector2( 0, 48 );
+                node.view = node_view;
+                node_view.init( this, node );
+            }
+        }
+
+        public void on_node_clicked( MapNodeView node_view ) {
+
+            var world = WorldState.current;
+            if( world.sub_state is WorldMapState state ) {
+                state.select_node( node_view.node );
             }
         }
     }
