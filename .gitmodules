@@ -1,0 +1,3 @@
+[submodule "Assets/ParseInvocation"]
+	path = Assets/ParseInvocation
+	url = https://gitee.com/viichi/UnityParseInvocation.git

@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 namespace Foundation {
@@ -13,9 +14,10 @@ namespace Foundation {
         }
 
         protected virtual void OnDestroy() {
-            if( ReferenceEquals( _instance, this ) ) {
+            if (ReferenceEquals(_instance, this)) {
                 _instance = null;
             }
         }
     }
+
 }

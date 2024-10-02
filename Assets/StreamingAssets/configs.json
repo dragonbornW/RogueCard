@@ -1,0 +1,61 @@
+{
+    "cards": [
+        {
+            "name": "打击",
+            "desc": "造成6点伤害",
+            "type": 1,
+            "cost_type": 0,
+            "fixed_cost": 1,
+            "target": 1,
+            "action": "MakeDamage(6)"
+        },
+        {
+            "name": "防御",
+            "desc": "获得5点格挡",
+            "type": 2,
+            "cost_type": 0,
+            "fixed_cost": 1,
+            "action": "GenerateShield(5)"
+        },
+        {
+            "name": "痛击",
+            "desc": "造成8点伤害\n给予2层易伤",
+            "type": 1,
+            "cost_type": 0,
+            "fixed_cost": 2,
+            "target": 1,
+            "action": "MakeDamage(8), ApplyBuff(易伤, 2)"
+        },
+        {
+            "name": "连续拳",
+            "desc": "造成2点伤害4次",
+            "type": 1,
+            "cost_type": 0,
+            "fixed_cost": 1,
+            "target": 1,
+            "action": "Repeat(MakeDamage(2), 4)"
+        },
+        {
+            "name": "活动肌肉",
+            "desc": "获得2点力量\n你的回合结束时，失去2点力量",
+            "type": 2,
+            "cost_type": 0,
+            "fixed_cost": 0,
+            "action": "AddStrength(2), ApplySelfBuff(活动肌肉, 2)"
+        }
+    ],
+    "monsters": [
+    	{
+    		"id": "TestMonster",
+    		"hp": 10,
+            "view_prefab": "test_monster",
+            "intent_generator": "Test(3, 3)"
+    	},
+        {
+            "id": "TestMonster2",
+            "hp": 10,
+            "view_prefab": "test_monster",
+            "intent_generator": "Test(3, 3, false)"
+        }
+    ]
+}

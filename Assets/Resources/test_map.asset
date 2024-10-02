@@ -9,30 +9,83 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3516f02e97c9dd942a7bbac22430d1b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b5136516ed94094eb22bf22fc6b49f1, type: 3}
   m_Name: test_map
   m_EditorClassIdentifier: 
   nodes:
-  - rid: 631960985395265554
-  - rid: 631960985395265555
-  - rid: 631960985395265556
-  entries: 0000000001000000
-  height: 1000
+  - rid: 7822094585734365184
+  - rid: 7822094585734365185
+  - rid: 7822094585734365186
+  - rid: 7822094585734365187
+  - rid: 7822094585734365188
+  - rid: 7822094585734365189
+  - rid: 7822094585734365190
+  entries: 00000000010000000200000003000000
+  height: 1687
   references:
     version: 2
     RefIds:
-    - rid: 631960985395265554
+    - rid: 7822094585734365184
       type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
       data:
-        position: {x: 0, y: 0}
-        next_indices: 02000000
-    - rid: 631960985395265555
+        position: {x: 282, y: 0}
+        next_indices: 04000000
+        monsters:
+        - TestMonster
+        player_seat: 
+        monster_seat: 
+    - rid: 7822094585734365185
       type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
       data:
-        position: {x: 644, y: 0}
-        next_indices: 02000000
-    - rid: 631960985395265556
+        position: {x: 1014, y: 2}
+        next_indices: 06000000
+        monsters:
+        - TestMonster
+        player_seat: 
+        monster_seat: 
+    - rid: 7822094585734365186
+      type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
+      data:
+        position: {x: 755, y: 0}
+        next_indices: 04000000
+        monsters:
+        - TestMonster
+        player_seat: 
+        monster_seat: 
+    - rid: 7822094585734365187
+      type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
+      data:
+        position: {x: 1487, y: 2}
+        next_indices: 06000000
+        monsters:
+        - TestMonster
+        - TestMonster2
+        player_seat: 
+        monster_seat: 
+    - rid: 7822094585734365188
       type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
       data:
         position: {x: 500, y: 1000}
+        next_indices: 05000000
+        monsters:
+        - TestMonster
+        player_seat: 
+        monster_seat: 
+    - rid: 7822094585734365189
+      type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
+      data:
+        position: {x: 855, y: 1687}
         next_indices: 
+        monsters:
+        - TestMonster
+        player_seat: 
+        monster_seat: 
+    - rid: 7822094585734365190
+      type: {class: MapAsset/BattleNode, ns: MapEdit, asm: Assembly-CSharp}
+      data:
+        position: {x: 1222, y: 992}
+        next_indices: 05000000
+        monsters:
+        - TestMonster
+        player_seat: 
+        monster_seat: 
